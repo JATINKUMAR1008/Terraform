@@ -15,7 +15,7 @@ resource "digitalocean_ssh_key" "ssh-droplet-key" {
 }
 
 resource "digitalocean_droplet" "web" {
-  count              = 2
+  count              = 3
   image              = "ubuntu-22-10-x64"
   name               = "web-${count.index}"
   region             = "nyc1"
